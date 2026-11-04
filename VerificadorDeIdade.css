@@ -1,0 +1,92 @@
+body {
+    background-color: #101827;
+    font-family: Arial, sans-serif;
+}
+.container {
+    background-color: #1e293b;
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+    max-width: 90%;
+    animation: sugrir 0.7 ease;
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    color: white;
+    font-size: 26px;
+}
+input {
+    width: 80%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input:focus {
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.8);
+}
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #1d4ed8;
+}
+#resultado.adulto {
+    color: yellow;
+}
+#resultado.crianca {
+    color: #38bdf8;
+}
+#resultado.adolescente {
+    color: #4ade80;
+}
+#resultado.idoso {
+    color: #c084fc;
+}
+#resultado.erro {
+    color: #f87171;
+}
+#resultado {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    animation: aparecer 2s ease;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes surgir {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
